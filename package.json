@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "init-submodules": "git submodule update --init --recursive",
-    "build": "just build"
+    "build": "just build",
+    "prepare": " npm run init-submodules && npm run build"
   },
   "peerDependencies": {
     "ffi-napi": "^4.0.3",
